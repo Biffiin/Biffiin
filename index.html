@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="app"></div>
+    <!-- Os dois <scripts> seguintes servem para o codigo de otm poder 
+      ser astivo por um website externo -->
+    <script src="https://unpkg.com/react@18/index.html"></script>
+    <script src="https://unpkg.com/react-dom@18/index.html"></script>
+    <!-- Script de Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+     const app = document.getElementById('app');
+     
+     function Header() {
+      return <h1> Develop. Preview. Ship.
+    }
+    
+     const root = reactDom.createRoot(app);
+     root.render(<Header />);
+    </script>
+
+    <!-- e tem o scrpit "imperativo"
+     <script type="text/javascript">
+      const app = document.getElementById('app');
+      const header = document.createElement('h1');
+      const text = 'Develop. Preview. Ship.';
+      const headerContent = document.createTextNode(text);
+      header.appendChild(headerContent);
+      app.appendChild(header);      
+     </script> -->
+  </body>
+</html>
